@@ -67,6 +67,24 @@ span /*This span is for the name and skill part in the introductory paragraph*/
     color: #E34234;
 }
 
+.navbar
+{
+    height: 10vh; /*Setting the height of the navbar*/
+}
+
+.copyright /*This is the copyright text at the bottom of the page*/
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1.4rem;
+}
+
 .navbar-brand /*Brand name in the navbar*/
 {
     color: white;
