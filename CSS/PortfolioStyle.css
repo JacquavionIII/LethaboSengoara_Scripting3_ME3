@@ -84,11 +84,6 @@ span /*This span is for the name and skill part in the introductory paragraph*/
     color: #E34234;
 }
 
-.navbar
-{
-    height: 10vh; /*Setting the height of the navbar*/
-}
-
 .copyright /*This is the copyright text at the bottom of the page*/
 {
     position: flex;
