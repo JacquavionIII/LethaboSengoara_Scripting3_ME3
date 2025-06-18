@@ -9,8 +9,15 @@ Github repo: https://github.com/JacquavionIII/Proto-Website
  Here's the link to the website : https://app.emergent.sh/
  I used it solely for planning the design of my portfolio and reactivity.
 
- Title: How to Create Responsive Portfolio Website Using HTML CSS and JS Only - Easy Tutorial
+Title: How to Create Responsive Portfolio Website Using HTML CSS and JS Only - Easy Tutorial
 Author: Pro Coder
 Date: 01 September 2024
 Code Version: 2.0
 Availabiltiy: https://youtu.be/xtK57s6QN28?si=s2h2yB2W-bOiXzJ6
+
+Title: Font Awesome
+Author: Dave Gandy
+Date: 7 December 2017
+Code Version: 7.0
+Availabiltiy: https://fontawesome.com/
+
