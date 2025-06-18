@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /*Importing the Roboto font from Google*/
+/*The import at the top is for the google font Roboto*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif; /*Setting the default font to Roboto*/
+}
+
+html
+{
+    font-size: 62.5%;
+    
+}
+
+body 
+{
+    background-color: black !important; /* "!important" Helps override the default bootstrap styles*/
+    margin: 0;
+    padding: 70px; /*Doing this for the navbar to has a fixed position on the page*/
+    position: relative;
+}
+
+header 
+{
+    position: relative;
+    z-index: 1;
+}
+
+h1 /*Header for the main page.*/
+{
+    background: rgba(30, 30, 30, 0.7); /*To make the background slightly transparent*/
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+h2, h3
+{
+    color: white;
+    font-weight: 500;
+}
+
+p
+{
+    color: white; 
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+section /*This span is highlighting my name*/
+{
+    min-height: 50vh;
+    padding: 5rem 9% 5rem;
+}
+
+span /*This span is for the name and skill part in the introductory paragraph*/
+{
+    color: #E34234;
+}
+
+.navbar-brand /*Brand name in the navbar*/
+{
+    color: white;
+    font-weight: 700;
+    transition: 0.5s ease;
+    font-size: 2rem !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover /*Hover effect for the brand name*/
+{
+    transform: scale(1.1); /*Slightly enlarges the brand name on hover*/
+}
+
+.navbar-item
+{
+    font-size: 1.9rem;
+    color: white; 
+    font-weight: 500; 
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent; 
+}
+
+.navbar-item:hover /*Hover effect for the navbar items*/
+{
+    border-bottom: 3px solid crimson; /*Adds a white underline on hover*/
+    transform: scale(1.05); /*Slightly enlarges the item on hover*/
+}
+
+.navbar-nav .nav-link 
+{
+    font-size: 1.50rem !important; /*Bootstrap is a nightmare for using !important to edit the size*/
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus /* Animation on hover */
+{
+    color: #E34234 !important;
+    transform: translateY(-3px) scale(1.08);
+    text-shadow: 0 2px 8px rgba(0,191,255,0.2);
+}
+
+
+.navbar-nav .nav-link::after /*Animated underline effect */
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: crimson;
+    transition: width 0.3s;
+    margin: 0 auto;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:focus::after 
+{
+    width: 100%;
+}
+
+.header-flex /*Making a header that adjusts the length with the display*/ 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.home
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home .home-content h2
+{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content h3
+{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p
+{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: white; /*Changing the color of the paragraph text*/
+}
+
+.homeImage
+{
+    border-radius: 70%;
+}
+
+.homeImage img
+{
+    position: relative;
+    width: 32vw;
+    border-radius: 70%;
+    box-shadow: 0 0 25px solid #E34234;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.homeImage img:hover
+{
+    font-size: 3.5rem;
+    font-weight: 500;
+
+}
+
+.social-icons a /*styling for the social media icons*/
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    text-decoration: none !important;
+    border: 0.2rem solid #E34234;
+    font-size: 2rem;
+    color: white;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease; /*for hover animation*/
+}
+
+.social-icons a:hover
+{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #E34234 !important; /*hover was not working so thougt !important might help here*/
+    box-shadow: 0 0 25px #E34234;
+}
+
+
+
+.btn
+{
+    display: inline-block;
+    padding: 1rem .8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 600;
+    border: 2px solid #E34234;
+    transition: 0.3s ease;
+}
+
+.btn:hover /*Hover effect for the button*/
+{
+    background-color: #E34234;
+    color: black;
+    transform: scale3d(1.03);
+    box-shadow: 0 0 25px #E34234;
+    box-shadow: 0 0 25px #E34234;
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;   /* Raises the button higher, cause I couldn.t dp it with bootstrap*/
+    margin-bottom: 2rem;
+}
+
+.btn.btn-primary {
+    font-size: 1.5rem;
+    padding: 0.75rem 2.5rem;
+    border-radius: 2rem;
+}
+
+.typing-text
+{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span
+{
+    position: relative;
+}
+
+.typing-text span::before /*To create the typing effect animaton*/
+{
+    content: ""; /*Initial word to display*/
+    color: #E34234 ;
+    animation: words 20s infinite; /*Change the words every set seconds*/
+}
+
+.typing-text span::after /*still for the typing effect*/
+{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor /* to create the typing-cursor for the cursor*/
+{
+    to
+    {
+        border-left: 3px solid #E34234;
+    }
+}
+
+@keyframes words /*typing effect animation to change the words*/
+{
+    0%, 20%
+    {content: "Game Dev";}
+    21%, 40%
+    {content: "3D Artist";}
+    41%, 60%
+    {content: "2D Artist";}
+    61%, 80%
+    {content: "Conceptualizer";}
+    81%, 100%
+    {content: "Illustrator";}
+}
+
+@media (max-width: 1000px) /*Responsive design for smaller screens*/
+{
+    .home
+    {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 800px) /*Responsive design for smaller screens*/
+{
+    .home 
+    {
+        flex-direction: column; /*Stacking the content vertically*/
+        margin: 5rem 4rem; /*Adding some margin for better spacing*/
+    }
+
+    .home .home-content h2
+    {
+        font-size: 5rem;
+    }
+
+    .homeImage img
+    {
+        width: 60vw; /*Adjusting the image size for smaller screens*/
+        margin-top: 4rem;
+    }
+
+    .social-icons a /*social icons*/
+    {
+        margin: 1rem; /*Adjusting the margin for social icons*/
+    }
+
+    .btn /*Stuff for the button*/
+    {
+        font-size: 1.4rem; /*Adjusting the button size*/
+    }
+}
+
+.home-content, .social-icons, .btn /*to make sure that there aren't any overlapping elements in the background*/
+{
+    position: relative;
+    z-index: 2;
+}
+
+
+
+#pageParticles /*To make the particles fill the whole page.*/
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+/*The stuff below is the ABout page*/
+.about-main 
+{
+    background-color: #000;
+    min-height: 100vh;
+    padding-top: 10px;
+}
+
+.about-container 
+{
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.section-title 
+{
+    font-size: 3.5rem;
+    color: #E34234;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.section-subtitle 
+{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.specializations li, .timeline li 
+{
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.skills-list li 
+{
+    background: #111;
+    border: 1px solid #444;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin: 0.25rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    color: #fff;
+    z-index: 2;
+    transition: 0.3s ease;
+}
+
+.skills-list li:hover
+{
+    background-color: #E34234;
+    color: black;
+    transform: scale3d(1.03);
+    box-shadow: 0 0 25px #E34234;
+    box-shadow: 0 0 25px #E34234;
+}
+
+.navbar .nav-link.active 
+{
+    color: red !important;
+    border-bottom: 2px solid red;
+}
+
+.timeline-section h2 
+{
+  font-size: 2.5rem;
+  color: white;
+}
+
+.timeline-card 
+{
+  border-left: 5px solid red;
+}
+
+/*The stuff below is the Showcase page*/
+.showcase-container {
+  margin-top: 5px;
+  position: relative;
+  padding: 2rem;
+}
+
+.artwork {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.artwork:hover 
+{
+  box-shadow: 0 0 20px 4px #E34234; 
+  transform: scale(1.03);
+}
+
+
+.artwork-details /* This is for the details card */
+{
+  position: fixed;
+  top: 120px;
+  right: 30px;
+  width: 300px;
+  max-width: 90vw;
+  background: rgba(20, 20, 20, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  z-index: 1000;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-shadow: 0 0 10px #E34234;
+}
+
+.artwork-details.hidden 
+{
+  opacity: 0;
+  transform: scale(0.95) translateX(50%);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) 
+{
+  .artwork-details /* Changing how the card appears for smaller screens*/
+  {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0 0 15px #E34234;
+  }
+
+  .artwork-details.hidden 
+  {
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+}
+
+/*The stuff below is for the Contact page*/
+#contact
+{
+    z-index: 2;
+    position: relative;
+}
+
+.contact-section 
+{
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  color: white;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container 
+{
+  background-color: #111;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.contact-container h2 
+{
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.contact-form 
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label 
+{
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea 
+{
+  background-color: #222;
+  border: none;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus 
+{
+  outline: none;
+  border: 1px solid red;
+}
+
+.contact-form button 
+{
+  background: none;
+  border: 2px solid red;
+  color: red;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact-form button:hover 
+{
+  background-color: red;
+  color: black;
+}
+
+.contact-section .social-icons 
+{
+  margin-top: 30px;
+}
+
+/* Social Links Again cause I want try re-using that code on the home page*/
+.social-links 
+{
+  text-align: center;
+  color: white;
+}
+
+.social-links h3 
+{
+  margin-bottom: 20px;
+}
+
+
+
+

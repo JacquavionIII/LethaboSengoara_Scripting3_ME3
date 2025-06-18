@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home | LS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Importing Bootstrap-->
+        <link rel="stylesheet" href="PortfolioStyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--Importing Font Awesome for icons-->
+    </head>
+    <body>
+        <div id="pageParticles"></div>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent border-bottom border-white fixed-top" style="background: rgba(30,30,30,0.7) !important;"> <!--Navbar with a transparent background-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Lethabo Sengoara</a> <!--Brand name-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button> <!--Toggler for mobile view-->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown"> <!--Collapsing the navbar on smaller screens-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="PortfolioAbout.html">About</a> <!--Link to the About page-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PortfolioShowcase.html">Projects</a> <!--Link to the Projects page-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PortfolioContact.html">Contact</a> <!--Link to the Contact page-->
+                    </li>
+                </ul>
+            </div>
+            </div>
+            </nav>
+        </header>
+
+        <main style="margin-top: 90px;"> <!--Main content with a top margin to avoid overlap with the fixed navbar-->
+            <section class="home">
+                <div class="homeImage">
+                    <img src="Yuuki.png" alt="Yuuki Portrait" class="img-fluid">
+                </div>
+                <div class="home-content">
+                    <h2>Hi, I'm <span>Lethabo</span></h2>
+                    <h3 class="typing-text">I'm a <span></span></h3>
+                    <p>Welcome to my digital portfolio, where I'll be explaining more about msyelf and what my skills are. Let's begin the tour.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/yuukimakesart?igsh=NDV1bGhsYngycDVu&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/yuukixmikoto?s=11"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.artstation.com/yuukixmikoto"><i class="fa-brands fa-artstation"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="center-btn">
+                <a href="PortfolioAbout.html" class="btn btn-primary">Let's Begin The Tour</a>
+            </div>
+        </main>
+             
+        <script src="PortfolioScript.js"></script>
+        <!-- Importing Particles.js and app.js files to make particles work -->
+             <script src="particles.js-master/particles.js"></script>
+             <!--Need this DOM function to make sure that particles load correctly before everything else-->
+             <script> 
+             document.addEventListener("DOMContentLoaded", function() 
+             {
+            particlesJS.load('pageParticles', 'particlesjs-config.json', function() 
+            {
+            console.log('particles.js config loaded');
+            });
+            });
+            </script> <!--Loading the DOM cause the damn particles won't load....-->
+
+        <!-- Bootstrap JS Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+

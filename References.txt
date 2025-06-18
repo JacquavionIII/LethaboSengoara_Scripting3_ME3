@@ -1,0 +1,16 @@
+Title: Particles.js - A lightweight JavaScript library for creating particles
+Author: Vincent Garreau
+Date: 10 May 2015
+Code Version: 5.0
+Availabiltiy: https://vincentgarreau.com/particles.js/
+
+Github repo: https://github.com/JacquavionIII/Proto-Website
+ for the Portfolio example on Emergent and the job ID: 62f7d292-6621-4199-a34b-5c8ae3384c20
+ Here's the link to the website : https://app.emergent.sh/
+ I used it solely for planning the design of my portfolio and reactivity.
+
+ Title: How to Create Responsive Portfolio Website Using HTML CSS and JS Only - Easy Tutorial
+Author: Pro Coder
+Date: 01 September 2024
+Code Version: 2.0
+Availabiltiy: https://youtu.be/xtK57s6QN28?si=s2h2yB2W-bOiXzJ6

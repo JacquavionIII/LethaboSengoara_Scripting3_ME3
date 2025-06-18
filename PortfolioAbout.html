@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About | LS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Importing Bootstrap-->
+        <link rel="stylesheet" href="PortfolioStyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--Importing Font Awesome for icons-->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> <!--AOS Library for the scrolling cards-->
+    </head>
+    <body>
+        <div id="pageParticles"></div> 
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent border-bottom border-white fixed-top" style="background: rgba(30,30,30,0.7) !important;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Lethabo Sengoara</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PortfolioShowcase.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PortfolioContact.html">Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        </header>
+
+        <main class="about-main text-white">
+            <section class="about-container container py-5">
+                <h2 class="section-title">About Me</h2>
+                <p class="lead">
+                   I am a digital artist that likes to push the boundaries
+                   of my creativity through experimentation with various topics and ideas.
+                </p>
+                <p>
+                    My name is Lethabo Sengoara, I am a Game Designer and digital artist. 
+                    I mainly specialize in 2D Art, Illusstration, and 
+                </p>
+                <p>
+                    something spwcial, something special.......
+                </p>
+
+                <h2 class="section-subtitle mt-5">Specializations</h2>
+                <ul class="specializations list-unstyled">
+                    <li>2D Illustrations</li>
+                    <li>Concept Art</li>
+                    <li>Character Design</li>
+                </ul>
+
+                <h2 class="section-subtitle mt-5">Skills</h2>
+                <ul class="skills-list list-inline">
+                    <li class="list-inline-item">Photoshop</li>
+                    <li class="list-inline-item">Clip Studio Paint</li>
+                    <li class="list-inline-item">Procreate</li>
+                    <li class="list-inline-item">Figma</li>
+                    <li class="list-inline-item">Blender</li>
+                    <li class="list-inline-item">Unity</li>
+                    <li class="list-inline-item">C#</li>
+                    <li class="list-inline-item">HTML/CSS/JS</li>
+                </ul>
+
+            </section>
+
+            <!--Cards for the timeline-->
+            <section class="timeline-section container py-5">
+                <h2 class="text-center mb-5">Timeline</h2>
+                <div class="row g-5">
+
+                    <!-- Left Slide Card-->
+                    <div class="col-md-6" data-aos="fade-right">
+                        <div class="timeline-card bg-dark text-white p-4 rounded shadow">
+                            <h4>2023-2024</h4>
+                            <p>
+                                At Open Window Institute, I studied to refine my artistic skills and versatility with 
+                                different art ,mediums while in the pursuit of my Higher Certificate in 3D Animation & VFX.
+                                During this time I learned the core fundamentals of 3D Modeling, Animation and VFX work.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Slide Card -->
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="timeline-card bg-dark text-white p-4 rounded shadow">
+                            <h4>2024-2027</h4>
+                            <p>
+                                I am currently studying for my BA in Game Design at SAE Institute, where I have further 
+                                improved my art skills and have expanded my knowledge on relevant software and skills 
+                                required in the game design industry. I have learnt to code in C# using Unity, HTML, CSS, and JavaScript for Web Development,
+                                and have also leaned how to use more collabrative softwares like Github, Figma and Trello. 
+                                In this course we tackle all aspects of game design to better help the futur-graduates understand the industry and 
+                                how to work efficciently in the production pipeline.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        
+        <div class="center-btn">
+            <a href="PortfolioShowcase.html" class="btn btn-primary">Gallery Tour</a>
+        </div>
+
+             
+        <script src="PortfolioScript.js"></script>
+        <!-- Importing Particles.js and app.js files to make particles work -->
+             <script src="particles.js-master/particles.js"></script>
+             <!--Need this DOM function to make sure that particles load correctly before everything else-->
+             <script>
+            document.addEventListener("DOMContentLoaded", function() 
+             {
+            particlesJS.load('pageParticles', 'particlesjs-config.json', function() 
+            {
+            console.log('particles.js config loaded');
+            });
+            }); 
+            </script>
+        <!-- Bootstrap JS Bundle-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <!--Initializing AOS for animations on scroll-->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script> 
+    </body>
+</html>
