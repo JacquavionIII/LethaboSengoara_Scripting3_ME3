@@ -368,6 +368,14 @@ span /*This span is for the name and skill part in the introductory paragraph*/
     padding-top: 10px;
 }
 
+.lead /*paragraph at the top that acts as a subheader*/
+{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
 .about-container 
 {
     max-width: 850px;

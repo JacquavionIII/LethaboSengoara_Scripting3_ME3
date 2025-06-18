@@ -1,38 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function() 
-// {
-//     const menu = document.getElementById("menu");
-//     const dropDownMenu = document.getElementById("dropDownMenu");
-
-//     // Toggle dropdown on button click
-//     menu.addEventListener("click", function(e) 
-//     {
-//         e.stopPropagation();
-//         dropDownMenu.style.display = dropDownMenu.style.display === "block" ? "none" : "block";
-//     });
-
-//     // Prevent menu click from closing itself
-//     dropDownMenu.addEventListener("click", function(e) 
-//     {
-//         e.stopPropagation();
-//     });
-
-//     // Hide menu when clicking outside
-//     document.addEventListener("click", function() 
-//     {
-//         dropDownMenu.style.display = "none";
-//     });
-
-//     // Hide menu when a link is clicked
-//     dropDownMenu.querySelectorAll('a').forEach(function(link) 
-//     {
-//         link.addEventListener('click', function() {
-//             dropDownMenu.style.display = "none";
-//         });
-//     });
-// });
-
-//Bootstrap now controls the menu functionality.. this thing is really powerful jeez
-
 document.addEventListener('DOMContentLoaded', () => 
 {
   const artworks = document.querySelectorAll('.artwork');
