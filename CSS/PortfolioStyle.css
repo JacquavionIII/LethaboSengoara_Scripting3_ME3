@@ -23,12 +23,29 @@ body
     margin: 0;
     padding: 70px; /*Doing this for the navbar to has a fixed position on the page*/
     position: relative;
+    padding-bottom: 70vh;
 }
 
 header 
 {
     position: relative;
-    z-index: 1;
+    z-index: 5;
+}
+
+footer 
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    z-index: 1000;
+    margin: 0;
 }
 
 h1 /*Header for the main page.*/
@@ -74,15 +91,15 @@ span /*This span is for the name and skill part in the introductory paragraph*/
 
 .copyright /*This is the copyright text at the bottom of the page*/
 {
-    position: fixed;
+    position: flex;
     bottom: 0;
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 1rem 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: transparent;
     color: white;
     font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar-brand /*Brand name in the navbar*/
@@ -171,6 +188,7 @@ span /*This span is for the name and skill part in the introductory paragraph*/
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
+    z-index: 1;
 }
 
 .home-content h3
@@ -178,6 +196,7 @@ span /*This span is for the name and skill part in the introductory paragraph*/
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    z-index: 1;
 }
 
 .home-content p
@@ -185,6 +204,7 @@ span /*This span is for the name and skill part in the introductory paragraph*/
     font-size: 2rem;
     margin-bottom: 2rem;
     color: white; /*Changing the color of the paragraph text*/
+    z-index: 1;
 }
 
 .homeImage
@@ -279,13 +299,14 @@ span /*This span is for the name and skill part in the introductory paragraph*/
 .typing-text span
 {
     position: relative;
+    z-index: 1;
 }
 
 .typing-text span::before /*To create the typing effect animaton*/
 {
     content: ""; /*Initial word to display*/
     color: #E34234 ;
-    animation: words 20s infinite; /*Change the words every set seconds*/
+    animation: words 25s infinite; /*Change the words every set seconds*/
 }
 
 .typing-text span::after /*still for the typing effect*/
@@ -310,15 +331,25 @@ span /*This span is for the name and skill part in the introductory paragraph*/
 
 @keyframes words /*typing effect animation to change the words*/
 {
-    0%, 20%
+    0%, 5%
+    {content: "";}
+    6%, 20%
     {content: "Game Dev";}
-    21%, 40%
+    21%, 25%
+    {content: "";}
+    26%, 40%
     {content: "3D Artist";}
-    41%, 60%
+    41%, 45%
+    {content: "";}
+    46%, 60%
     {content: "2D Artist";}
-    61%, 80%
+    61%, 65%
+    {content: "";}
+    66%, 80%
     {content: "Conceptualizer";}
-    81%, 100%
+    81%, 85%
+    {content: "";}
+    86%, 100%
     {content: "Illustrator";}
 }
 
