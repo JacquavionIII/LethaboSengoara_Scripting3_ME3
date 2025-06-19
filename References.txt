@@ -21,3 +21,8 @@ Date: 7 December 2017
 Code Version: 7.0
 Availabiltiy: https://fontawesome.com/
 
+Title: Google Fonts Roboto Font
+Author: Christian Robertson, Paratype, Font Bureau
+Date: 12 January 2012
+Code Version: 3.009
+Availabiltiy: https://fonts.google.com/specimen/Roboto
